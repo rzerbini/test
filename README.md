@@ -1,9 +1,9 @@
 ## Docker Network
 
-docker network create <name>
+docker network create mongo-network
 
 ## Start mongo
-docker run -p 27012:27017 -d \
+docker run -p 27017:27017 -d \
 -e MONGO_INITDB_ROOT_USERNAME=admin \
 -e MONGO_INITDB_ROOT_PASSWORD=password \
 --name mongodb \
@@ -49,6 +49,8 @@ _You can access the application under localhost:3000 from your browser_
 
 #### To build a docker image from the application
 
-    docker build -t my-app:1.0 .       
+    docker build -t my-app:1.0 .  
+
+    docker run my-app:1.0     
     
 The dot "." at the end of the command denotes location of the Dockerfile.
