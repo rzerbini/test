@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   my-app:
     image: rzerbini2/rzerbini:my-app-1.1
