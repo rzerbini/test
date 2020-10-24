@@ -2,8 +2,8 @@ version: '3'
 services:
   my-app:
    # image: ${docker-registry}/my-app:1.1
-   image: rzerbini2/rzerbini:my-app-1.1
-   ports:
+    image: rzerbini2/rzerbini:my-app-1.1
+    ports:
      - 3000:3000
   mongodb:
     image: mongo
